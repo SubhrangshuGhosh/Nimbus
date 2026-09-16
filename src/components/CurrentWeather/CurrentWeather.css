@@ -1,0 +1,55 @@
+#currentweather-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  animation: fadeIn 0.7s var(--ease);
+}
+
+#currentweather-icon-wrapper {
+  color: var(--text-primary);
+  opacity: 0.92;
+  margin-bottom: 4px;
+}
+
+#currentweather-temp-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+  line-height: 1;
+}
+
+#currentweather-temperature {
+  font-size: clamp(6rem, 20vw, 9rem);
+  font-weight: 200;
+  letter-spacing: -0.06em;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+  line-height: 0.9;
+}
+
+#currentweather-unit {
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: var(--text-subtle);
+  margin-top: 20px;
+  letter-spacing: -0.02em;
+}
+
+#currentweather-condition {
+  margin-top: 6px;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 640px) {
+  #currentweather-temperature {
+    font-size: clamp(5rem, 24vw, 7rem);
+  }
+  #currentweather-unit {
+    font-size: 1.4rem;
+    margin-top: 14px;
+  }
+  #currentweather-condition { font-size: 0.92rem; }
+}
